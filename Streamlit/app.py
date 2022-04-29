@@ -1,19 +1,22 @@
 import streamlit as st
 import pandas as pd
 import boto3
+from io import BytesIO
 from keys import Access_Key_ID,Secret_Access_Key,Cognito_Client_ID
 
 
 def main2():
 
-    st.title("Employee ")
+   
 
-    menu = ["Upload","Performance"]
+    menu = ["Upload","Performance"]  #Add Create an Agent Page
     choice = st.selectbox("Menu",menu)
 
     if choice == "Upload":
-        option = st.selectbox( 'Select Agents',("Agent-1","Agent-2","Agent-3"))
-
+        
+        st.subheader("Upload Call")
+        option = st.selectbox( 'Select Agents',("Agent-1","Agent-2","Agent-3"))  # Get the Agents Dynamically from s3 folders
+ 
         st.write('You selected:', option)
 
         if option :
@@ -21,25 +24,30 @@ def main2():
         if uploaded_file1 is not None:
         
             bytes_data1 = uploaded_file1.getvalue()
-            #st.write(bytes_data1)
-            print(uploaded_file1)
-            awsclient = boto3.client('s3', aws_access_key_id = Access_Key_ID, aws_secret_access_key = Secret_Access_Key)
+            bytesIO = BytesIO(bytes_data1)    
+            s3client = boto3.client('s3', aws_access_key_id = Access_Key_ID, aws_secret_access_key = Secret_Access_Key)
             bucket = 'testteam19'
             #awsclient.upload_file(bytes_data1,bucket,uploaded_file1.name)
+            awspath = option + "/" + uploaded_file1.name
+            with bytesIO as data:
+                s3client.upload_fileobj(data, bucket, awspath)
+            #Check the status of lambda
+            #dynamotodf
+            #visualize the df
         
         
 
 
     elif choice == "Performance":
-        st.subheader("Dashboards")
-        option = st.selectbox( 'Select Agents',("Agent-1","Agent-2","Agent-3"))
+        st.subheader("Agent Performance")
+        option = st.selectbox( 'Select Agents',("Agent-1","Agent-2","Agent-3")) # Get the Agents Dynamically from s3 folders
         st.write('You selected:', option)
         if option :
             print("Dashboards for each")
 
 
 def main():
-    st.title("Welcome to Weather Nowcasting")
+    st.title("Welcome to Call Intelligence Portal")
     
 
     menu = ["Home","Login","SignUp"]
@@ -69,7 +77,7 @@ def main():
                     st.write("Login Successful")
                     main2() 
             except:
-                st.write("Username or Password is incorrect or Username not confirmed by admin")
+                st.write("Username/Password is incorrect or Username not confirmed by admin")
     elif choice == "SignUp":
         st.subheader("Create New Account")
         new_username = st.text_input("Username")
