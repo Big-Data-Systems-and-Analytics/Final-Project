@@ -27,8 +27,9 @@ https://share.streamlit.io/kashyap-datta/callanalyticsportal_streamlit/main/app.
 
 ## Introduction
 
-As part of an academic project for the course Big Data Systems & Intelligence Analytics, we have built an application for customer support in call centers.
-Through this application we uncover insights from conversations of customers with call center agents, to help businesses manage script compliance and find new opportunities to satisfy the customers.
+As part of an academic project for the course Big Data Systems & Intelligence Analytics, we have built, Customer Support Call Intelligence and Analytics application to analyse the sentiment of the calls received to the call center from the customers, which would help in  building a valuable customer base and improving the business. Apart from this, the analysis would help the Supervisor evaluate the performance of the customer service executives or train them.
+
+This application leverages various services such as Steamlit, AWS Transcribe, AWS Comprehend, AWS Quicksight, DynamoDb etc. to perform operations such as Transcription(Speech-To-Text), Text to Speech conversion, Analytical visualizations and Customer Sentiment Analysis.
 
 
 
