@@ -1,13 +1,10 @@
 # Customer Support Call Intelligence and Analytics
 
-### Team Members
+## Team Members
 
 Kashyap Datta Kovvali
-
 Swathi Sharma
-
 Greeshma Tatineni
-
 Bala Yeshwant M
 
 
