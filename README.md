@@ -44,7 +44,12 @@ This application leverages various services such as Steamlit, AWS Transcribe, AW
 
 ## Folder Structure
 
-
+├── docs                <- Documents related to project
+├── src
+├── Streamlit           <- Source code for Streamlit application
+│   ├── Lambda          <- Source code for Lambda Triggers
+├── visualizations      <- Visualizations provided to the users
+├── README.md           <-  README File
 
 
 ## Getting Started
