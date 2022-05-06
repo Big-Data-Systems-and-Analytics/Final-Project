@@ -42,26 +42,6 @@ This application leverages various services such as Steamlit, AWS Transcribe, AW
 <img width="742" alt="image" src="https://user-images.githubusercontent.com/91439390/167069671-eea6865d-daab-42d9-938a-679657ff647e.png">
 
 
-## Folder Structure
-
-├── docs                <- Documents related to project
-├── src
-    ├── Streamlit           <- Source code for Streamlit application
-│   ├── Lambda          <- Source code for Lambda Triggers
-├── visualizations      <- Visualizations provided to the users
-├── README.md           <-  README File
-
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-
 
 ## Getting Started
 
