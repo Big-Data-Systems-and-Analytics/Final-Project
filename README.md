@@ -26,6 +26,7 @@ https://share.streamlit.io/kashyap-datta/callanalyticsportal_streamlit/main/app.
 
 ## Code Documentation for Streamlit
 
+https://kashyap-datta.github.io/callanalyticsdocumentation/
 
 ## Introduction
 
