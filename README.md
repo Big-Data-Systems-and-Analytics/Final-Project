@@ -23,6 +23,10 @@ https://codelabs-preview.appspot.com/?file_id=1x40wAQ8VFI5BGhMtM1P1USrfJz1R0rOH6
 
 https://share.streamlit.io/kashyap-datta/callanalyticsportal_streamlit/main/app.py
 
+## QuickSight Dashboard Link
+
+https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
+
 ## Code Documentation for Streamlit
 
 https://kashyap-datta.github.io/callanalyticsdocumentation/
