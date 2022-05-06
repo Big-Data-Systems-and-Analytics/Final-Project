@@ -124,4 +124,8 @@ Dataset Link : https://media.talkbank.org/ca/CallHome/eng/
 <img width="615" alt="image" src="https://user-images.githubusercontent.com/91439390/167068296-360899cb-acd5-4507-9457-bf3ae19f1d91.png">
 
 
-
+Contribution:
+Bala Yeshwant M - 25%
+Greeshma Tatineni - 25%
+Kashyap Datta Kovvali - 25%
+Swathi Sharma - 25%
