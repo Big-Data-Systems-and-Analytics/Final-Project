@@ -16,8 +16,7 @@ https://codelabs-preview.appspot.com/?file_id=1mFQ1wPGr-LE8FExTx6RG91auWTggSH0qC
 
 ## Project Proposal 
 
-https://codelabs-preview.appspot.com/?file_id=1_Ycc7fLGvPxIqPCUQGJnXBAODftM13Q0FktpYkdfYbE#0
-
+https://codelabs-preview.appspot.com/?file_id=1x40wAQ8VFI5BGhMtM1P1USrfJz1R0rOH6S3yEq14_oE#0
 
 ## Web Application - Hosted on Streamlit
 
