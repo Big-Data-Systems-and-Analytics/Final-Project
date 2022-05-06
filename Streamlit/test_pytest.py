@@ -6,8 +6,8 @@ data = dbtodf()
 
 def test_checkfile():
 
-    assert checkfile(dbtodf(),'Agen10_9') == None
-    assert checkfile(dbtodf(),'') == None
+    assert checkfile(dbtodf(),'Agen10_9').empty == True
+    assert checkfile(dbtodf(),'').empty == True
     assert checkfile(dbtodf(),'Agent1_001').equals(data.loc[data['partition_key'] == 'Agent1_001'])
     assert checkfile(dbtodf(),'Agent1_001').equals(data.loc[data['partition_key'] == 'Agent1_001']) == True
     assert checkfile(dbtodf(),'Agent3_4074').equals(data.loc[data['partition_key'] == 'Agent3_4157']) == False
@@ -35,3 +35,4 @@ def test_login():
 
 def test_signup():
     assert signup('scsjj','ksjsh') == 400
+    assert signup('Pytest004*','Pytest004*') == 200
