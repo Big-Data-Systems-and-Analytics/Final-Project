@@ -28,7 +28,7 @@ https://share.streamlit.io/kashyap-datta/callanalyticsportal_streamlit/main/app.
 
 ## QuickSight Dashboard Link
 
-(Please refer "QuichSight Access" to access the below link)
+(Please refer "QuickSight Access" to access the below link)
 
 https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
 
@@ -108,7 +108,7 @@ AWS Athena - The data in Dynamodb cannot be directly visualized on AWS QuickSigh
 
 AWS QuickSight - The Markeing Manager and the Call center Manager are provided with an interactive dashboard with various insights on sentiment analysis.
 
-Quicksight Access - 
+QuickSight Access - 
 The marketing manager and the customer service manager will be given access to the quicksight dashboard to view the analytics. They need to follow the below steps to acces the dashboard via the link: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
   1. Create a quicksight account once the email with the invitation is received
   2. account name: bigdata-team7, make sure the correct account name is passsed during login
