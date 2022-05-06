@@ -11,7 +11,7 @@
 
 ## Project Report
 
-<img width="742" alt="image" src="https://user-images.githubusercontent.com/91439390/167069671-eea6865d-daab-42d9-938a-679657ff647e.png">
+
 
 
 ## Project Proposal 
@@ -34,8 +34,8 @@ Through this application we uncover insights from conversations of customers wit
 
 ## Architecture
 
-<img width="742" alt="image" src="https://user-images.githubusercontent.com/91439390/167064138-16f66117-6426-46a1-9b0e-87d6c9fe5ce4.png">
 
+<img width="742" alt="image" src="https://user-images.githubusercontent.com/91439390/167069671-eea6865d-daab-42d9-938a-679657ff647e.png">
 
 
 ## Folder Structure
@@ -121,11 +121,17 @@ Dataset Link : https://media.talkbank.org/ca/CallHome/eng/
 
 ## Quicksight Dashboard
 
+link: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
+
 <img width="615" alt="image" src="https://user-images.githubusercontent.com/91439390/167068296-360899cb-acd5-4507-9457-bf3ae19f1d91.png">
 
 
 Contribution:
+
 Bala Yeshwant M - 25%
+
 Greeshma Tatineni - 25%
+
 Kashyap Datta Kovvali - 25%
+
 Swathi Sharma - 25%
