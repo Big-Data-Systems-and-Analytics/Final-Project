@@ -25,6 +25,8 @@ https://share.streamlit.io/kashyap-datta/callanalyticsportal_streamlit/main/app.
 
 ## QuickSight Dashboard Link
 
+(Please refer "QuichSight Access" to access the below link)
+
 https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
 
 ## Code Documentation for Streamlit
