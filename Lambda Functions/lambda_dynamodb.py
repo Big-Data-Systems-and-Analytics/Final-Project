@@ -5,6 +5,7 @@ from decimal import Decimal
 #import boto3.dynamodb
 
 def lambda_handler(event, context):
+    print("event",str(event))
     s3 = boto3.client("s3")
     dynamodb = boto3.resource('dynamodb')
     if event:
@@ -19,9 +20,9 @@ def lambda_handler(event, context):
         jsonDict = json.loads(jsonFileReader, parse_float=Decimal)
         #print(json.loads(jsonFileReader)
         #print(dynamodb.list_tables()['TableNames'])
-        table = dynamodb.Table('sentiment')
+        table = dynamodb.Table('sentiment2')
         table.put_item(Item=jsonDict)
-        print("ingested into table sentiment")
+        print("ingested into table sentiment2")
     # TODO implement
     return {
         'statusCode': 200,
