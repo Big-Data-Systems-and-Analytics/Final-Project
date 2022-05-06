@@ -29,7 +29,7 @@ https://kashyap-datta.github.io/callanalyticsdocumentation/
 
 ## Introduction
 
-As part of an academic project for the course Big Data Systems & Intelligence Analytics, we have built, Customer Support Call Intelligence and Analytics application to analyse the sentiment of the calls received to the call center from the customers, which would help in  building a valuable customer base and improving the business. Apart from this, the analysis would help the Supervisor evaluate the performance of the customer service executives or train them.
+As part of an academic project for the course Big Data Systems & Intelligence Analytics, we have built, Customer Support Call Intelligence and Analytics application to analyse the sentiment of the calls received to the call center from the customers, which would help in  building a valuable customer base and improving the business. Apart from this, the analysis would help the Call Center Supervisor evaluate the performance of the customer service executives or train them.
 
 This application leverages various services such as Steamlit, AWS Transcribe, AWS Comprehend, AWS Quicksight, DynamoDb etc. to perform operations such as Transcription(Speech-To-Text), Text to Speech conversion, Analytical visualizations and Customer Sentiment Analysis.
 
@@ -67,8 +67,39 @@ The pipeline requires the following AWS services :
 
 ## Setup
 
-1. AWS - Create an AWS account, if you don't have one already
-2. Quicksight Access - 
+### Streamlit Setup:
+Download the available streamlit folder
+
+Install the following packages
+
+pip install streamlit
+pip install boto3
+
+Run the application locally using following command
+
+streamlit run app.py
+
+Go to http://localhost:8501 to view the application locally
+
+
+### AWS Setup:
+AWS - Create an AWS account, if you don't have one already
+
+AWS Cognito - Create user pool and setup an app client. User pools are directories of federated and local user profiles. They provide authentication options for the users.
+
+AWS S3 - Create a bucket to store various objects on S3 like audio files, transcripts, sentiment data etc.
+
+AWS S3 event triggers - Place event triggers on the landing folders to kick off the lambda functions. For example if an audio file is upladed to S3 in a particular path, the event trigger will kick off the lambda fuction for the AWS Transcribe job.
+
+AWS Lambda - Create 3 lambda function to accept the audio files,transcribe, comprehend, load the sentiment analysis to dynamodb and visualize on quicksight. Use the code provided in src/Lambda Functions folder.
+
+AWS IAM roles - Create IAM roles for each of the lambdas to access the AWS Transcribe, AWS Comprehend, DynamoDb, CloudWatch and S3
+
+AWS Athena - The data in Dynamodb cannot be directly visualized on AWS QuickSight, we are using Athena connecters to be able to visualize the data on quicksqicksight
+
+AWS QuickSight - The Markeing Manager and the Call center Manager are provided with an interactive dashboard with various insights on sentiment analysis.
+
+Quicksight Access - 
 The marketing manager and the customer service manager will be given access to the quicksight dashboard to view the analytics. They need to follow the below steps to acces the dashboard via the link: https://us-east-1.quicksight.aws.amazon.com/sn/dashboards/aab311a1-27ba-40fc-80ba-532ddd1c8dd2
   1. Create a quicksight account once the email with the invitation is received
   2. account name: bigdata-team7, make sure the correct account name is passsed during login
